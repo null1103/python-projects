@@ -47,7 +47,7 @@ menu = [
 Task 1: Print number of items in the menu as follows:
 Items Available: X
 '''
-
+print("Items Available: ", len(menu))
 
 '''
 Task 2: Print name and price of each menu item as mentioned below:
