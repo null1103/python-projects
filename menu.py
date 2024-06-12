@@ -55,6 +55,9 @@ Name: X
 Price: Y
 '''
 
+for i in menu:
+    print("Name: ", i["name"])
+    print("Price: ", i["price"])
 
 '''
 Task 3: Create a receipt for the user who bought: Spanakopita, Calamari and Moussaka
@@ -64,3 +67,27 @@ Name: X2, Price: $Y2
 Name: X3, Price: $Y3
 Total: Z
 '''
+
+#print("Name: ", menu[0]["name"], "Price: ", menu[0]["price"])
+#print("Name: ", menu[3]["name"], "Price: ", menu[3]["price"])
+#print("Name: ", menu[4]["name"], "Price: ", menu[4]["price"])
+
+total = 0
+
+for i in menu:
+    if (i["name"] == "Spanakopita") or (i["name"] == "Calamari") or (i["name"] == "Moussaka") :
+        print("Name: ", i["name"], ", Price: ", i["price"])
+        total = total + i["price"]
+        print("Total So Far: ", total)
+
+print("Total: ", total)
+'''
+Task 4: Get total of first four items.
+'''
+sum = 0
+for i in range(0,4):
+    sum = sum + menu[i]["price"]
+
+print("Sum: ", sum)
+
+
